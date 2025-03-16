@@ -1,0 +1,28 @@
+
+# Ignore Eclipse-specific project files
+.classpath
+.project
+.settings/
+
+# Ignore compiled binaries
+bin/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE-specific files (if using IntelliJ or VS Code later)
+.idea/
+.vscode/
+
+# Ignore build artifacts
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Ignore logs and temp files
+*.log
+*.tmp
+*.swp
