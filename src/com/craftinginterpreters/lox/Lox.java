@@ -9,7 +9,11 @@ import java.nio.file.Paths;
 import java.util.List;
 
 public class Lox {
+	private static boolean hadError = false;
+
 	public static void main(String[] args) throws IOException {
+
+		
 		if (args.length > 1) {
 			System.out.println("Usage: jlox [script]");
 			System.exit(64);
@@ -27,7 +31,7 @@ public class Lox {
 		for (;;) {
 			System.out.print("> ");
 			String line = reader.readLine();
-			if (line == null)
+			if (line == null) // for end of input such as ctrl + d
 				break;
 			run(line);
 			hadError = false;
