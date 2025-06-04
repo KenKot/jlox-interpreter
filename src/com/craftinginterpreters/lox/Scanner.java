@@ -100,11 +100,11 @@ class Scanner {
 		case '>':
 			addToken(match('=') ? GREATER_EQUAL : GREATER);
 			break;
-		case 'o':
-			if (match('r')) {
-				addToken(OR);
-			}
-			break;
+//		case 'o':
+//			if (match('r')) {
+//				addToken(OR);
+//			}
+//			break;
 		case '/':
 			if (match('/')) {
 				// A comment goes until the end of the line.
