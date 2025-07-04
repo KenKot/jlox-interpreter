@@ -43,3 +43,17 @@ fun fib(n) {
 for (var i = 0; i < 20; i = i + 1) {
   print fib(i);
 }
+
+print "-------------------------";
+print "-------------------------";
+
+var a = "global";
+{
+  fun showA() {
+    print a;
+  }
+
+  showA();
+  var a = "block";
+  showA();
+}
