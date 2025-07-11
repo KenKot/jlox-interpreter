@@ -6,7 +6,7 @@ import java.util.Map;
 class LoxClass implements LoxCallable {
 	final String name;
 
-	private final Map<String, LoxFunction> methods;
+	private final Map<String, LoxFunction> methods; // Key is MethodName
 
 	LoxClass(String name, Map<String, LoxFunction> methods) {
 		this.name = name;
